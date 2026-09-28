@@ -1,10 +1,7 @@
-//char *AUTHOR_NAME        = (char *) "Your Name";
-//char *AUTHOR_AUTHORSHIP  = (char *) "I acknowledge that I have worked on this
-// assignment independently, except where explicitly noted and referenced.
-// Any collaboration or use of external resources has been properly cited.
-// I am fully aware of the consequences of academic dishonesty and agree to
-// abide by the university's academic integrity policy.";
-
+// Macy Seaholm
+// CSCI 112 Fall 2026
+// Programming Assignment #5
+// I declare that I am the author of this work, take full responsibility for it, and have disclosed any material external assistance
 // code.c — student implementation only
 
 /*
@@ -29,7 +26,17 @@
  */
 int find_max(int arr[], int n)
 {
-    // TODO: Your implementation here
+   int max = arr[0];
+
+   for (int i = 1; i <= n; i++)
+    {
+        if (arr[i] < max)
+        {
+            max == arr[i];
+        }
+    }
+   
+return max;
 }
 
 /*
@@ -42,7 +49,16 @@ int find_max(int arr[], int n)
  */
 int find_min(int arr[], int n)
 {
-    // TODO: Your implementation here
+    int min = arr[0];
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (arr[i] < min)
+        {
+            min == arr[i];
+        }
+    }
+return min;
 }
 
 /*
@@ -55,7 +71,7 @@ int find_min(int arr[], int n)
  */
 long sum_array(int arr[], int n)
 {
-    // TODO: Your implementation here
+
 }
 
 /*
