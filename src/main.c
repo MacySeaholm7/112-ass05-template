@@ -12,6 +12,10 @@
 
 int main(void)
 {
-
-    return 0;
+int arr[] = {5, 2, 8, 1, 9};
+printf("Max: %d\n", find_max(arr, 5));
+printf("Min: %d\n", find_min(arr, 5));
+printf("Sum: %ld\n", sum_array(arr, 5));
+float farr[] = {2.0f, 4.0f, 6.0f};
+printf("Average: %f\n", average(farr, 3));
 }

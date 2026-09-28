@@ -71,7 +71,12 @@ return min;
  */
 long sum_array(int arr[], int n)
 {
-
+    long sum = 0;
+    for (int i = 0; i <n; i++)
+    {
+        sum = sum + arr[i];
+    }
+    return sum;
 }
 
 /*
@@ -84,7 +89,12 @@ long sum_array(int arr[], int n)
  */
 double average(float arr[], int n)
 {
-    // TODO: Your implementation here
+    double sum = 0.0;
+    for (int i = 0; i < n; i++)
+    {
+        sum = sum + arr[i];
+    }
+    return sum / n;
 }
 
 /*
@@ -104,7 +114,17 @@ double average(float arr[], int n)
  */
 int linear_search(int arr[], int n, int target)
 {
-    // TODO: Your implementation here
+    int i = 0;
+
+    while (i < n)
+    {
+        if (arr[i] == target)
+        {
+        return i;
+        }
+            i++;
+    }
+    return -1;
 }
 
 
@@ -123,5 +143,5 @@ int linear_search(int arr[], int n, int target)
  */
 double heron(double x, double epsilon)
 {
-    // TODO: Your implementation here
+    
 }
