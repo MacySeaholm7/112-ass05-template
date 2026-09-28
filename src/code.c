@@ -28,15 +28,14 @@ int find_max(int arr[], int n)
 {
    int max = arr[0];
 
-   for (int i = 1; i <= n; i++)
+   for (int i = 1; i < n; i++)
     {
-        if (arr[i] < max)
+        if (arr[i] > max)
         {
             max == arr[i];
         }
     }
-   
-return max;
+   return max;
 }
 
 /*
@@ -51,14 +50,14 @@ int find_min(int arr[], int n)
 {
     int min = arr[0];
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i < n; i++)
     {
         if (arr[i] < min)
         {
             min == arr[i];
         }
     }
-return min;
+    return min;
 }
 
 /*
@@ -72,7 +71,7 @@ return min;
 long sum_array(int arr[], int n)
 {
     long sum = 0;
-    for (int i = 0; i <n; i++)
+    for (int i = 0; i < n; i++)
     {
         sum = sum + arr[i];
     }
@@ -120,7 +119,7 @@ int linear_search(int arr[], int n, int target)
     {
         if (arr[i] == target)
         {
-        return i;
+            return i;
         }
             i++;
     }
@@ -143,5 +142,25 @@ int linear_search(int arr[], int n, int target)
  */
 double heron(double x, double epsilon)
 {
-    
+   double guess = x / 2.0;
+   double prev_guess;
+   double diff;
+   
+   while(1)
+   {
+    prev_guess = guess;
+    guess = (guess + x / guess) / 2.0;
+    diff = guess - prev_guess;
+
+    if (diff < 0)
+    {
+        diff = -diff;
+    }
+
+    if (diff < epsilon)
+    {
+        break;
+    }
+   }
+   return guess;
 }
