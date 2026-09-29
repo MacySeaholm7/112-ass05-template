@@ -32,7 +32,7 @@ int find_max(int arr[], int n)
     {
         if (arr[i] > max)
         {
-            max == arr[i];
+            max = arr[i];
         }
     }
    return max;
