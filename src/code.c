@@ -54,7 +54,7 @@ int find_min(int arr[], int n)
     {
         if (arr[i] < min)
         {
-            min == arr[i];
+            min = arr[i];
         }
     }
     return min;
